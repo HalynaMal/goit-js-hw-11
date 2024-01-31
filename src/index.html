@@ -9,6 +9,14 @@
   </head>
   <body>
     
+    <form action="/search" method="get">
+      <!-- Поле для введення тексту пошуку -->
+      <label for="search">Пошук:</label>
+      <input type="text" id="search" name="q" placeholder="Введіть запит..." required>
+
+      <!-- Кнопка відправки форми -->
+      <button type="submit">Знайти</button>
+  </form>
 
     <script type="module" src="./main.js"></script>
   </body>
