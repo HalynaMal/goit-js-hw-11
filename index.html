@@ -4,21 +4,22 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/goit-js-hw-11/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>Module 11</title>
     
     <script type="module" crossorigin src="/goit-js-hw-11/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/goit-js-hw-11/assets/index-10c40100.css">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-11/assets/vendor-46aac873.js">
+    <link rel="stylesheet" href="/goit-js-hw-11/assets/vendor-eb6030bc.css">
+    <link rel="stylesheet" href="/goit-js-hw-11/assets/index-a1a29074.css">
   </head>
   <body>
-    
-    <form action="/search" method="get">
-      <!-- Поле для введення тексту пошуку -->
-      <label for="search">Пошук:</label>
-      <input type="text" id="search" name="q" placeholder="Введіть запит..." required>
+    <form class="form">
+      <input type="text" name="search" placeholder="Search image" required />
+      <button type="submit">Search</button>
+    </form>
 
-      <!-- Кнопка відправки форми -->
-      <button type="submit">Знайти</button>
-  </form>
+    <span class="loader"></span>
+
+    <ul class="gallery"></ul>
 
     
   </body>
